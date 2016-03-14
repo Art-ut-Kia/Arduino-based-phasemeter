@@ -22,7 +22,7 @@
  * You should have received a copy of the GNU General Public License along with this     *
  * program. If not, see <http://www.gnu.org/licenses/>.                                  *
  *****************************************************************************************/
-//#define autotest
+//#define selftest
  
 volatile long int t0;
 
@@ -30,7 +30,7 @@ void setup() {
   // shutdown the LED connected to pin #13
   pinMode(13, OUTPUT); digitalWrite(13, LOW);
 
-# ifdef autotest
+# ifdef selftest
   // for testing purpose: pins #4 & #5 are used to stimulate pins #2 and #3
   pinMode( 4, OUTPUT); digitalWrite( 4, HIGH);
   pinMode( 5, OUTPUT); digitalWrite( 5, HIGH);
@@ -45,7 +45,7 @@ void setup() {
 }
 
 void loop() {
-# ifdef autotest
+# ifdef selftest
   // sends a 1ms negative pulse on output #4
   digitalWrite(4, LOW);
   delay(1);
