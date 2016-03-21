@@ -10,6 +10,7 @@
  * - Interrupt handlers are attached to these pins, both sensitive to falling edges      *
  * - At each falling edge on input #3, transmits the time "d" elapsed since last falling *
  *   edge on pin #2.                                                                     *
+ *                         Author : Jean-Paul PETILLON                                   *
  * ----------------------------------- GNU GPL ----------------------------------------- *
  * This program is free software: you can redistribute it and/or modify it under the     *
  * terms of the GNU General Public License as published by the Free Software Foundation, *
