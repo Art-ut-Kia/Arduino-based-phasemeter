@@ -8,8 +8,8 @@
 //            #3                           |_|                |_|                        //
 //                            <---- d ---->                                              //
 // - Interrupt handlers are attached to these pins, both sensitive to falling edges      //
-// - At each falling edge on input #3, transmits on serial link the time "d" elapsed     //
-//   since last falling edge on pin #2.                                                  //
+// - At each falling edge on input #3, transmits on serial link and on an LCD the        //
+//   time "d" elapsed from the last falling edge on pin #2.                              //
 //                         Author : Jean-Paul PETILLON                                   //
 //------------------------------------ GNU GPL ------------------------------------------//
 // This program is free software: you can redistribute it and/or modify it under the     //
