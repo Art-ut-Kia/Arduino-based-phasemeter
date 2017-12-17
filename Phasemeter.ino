@@ -31,7 +31,7 @@
 
 #ifdef uselcd  // RS, EN, D4, D5, D6, D7
 LiquidCrystal lcd(A0, A1, A2, A3, A4, A5);
-#endif // (def selftest)
+#endif // (ifdef uselcd)
 
 volatile long int t0;
 volatile unsigned char phase;
@@ -44,7 +44,7 @@ void setup() {
   // for testing purpose: pins #4 & #5 are used to stimulate pins #2 and #3
   pinMode(4, OUTPUT); digitalWrite(4, HIGH);
   pinMode(5, OUTPUT); digitalWrite(5, HIGH);
-# endif // (def selftest)
+# endif // (ifdef selftest)
 
   // initializes the phase-meter
   Serial.begin(9600);
